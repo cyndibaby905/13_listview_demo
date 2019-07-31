@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 3,
-      child: new Scaffold(
+      child: Scaffold(
         body: TabBarView(
           children: [
             ParallelWidget(),
@@ -35,7 +35,7 @@ class MyHomePage extends StatelessWidget {
             ScrollControllerWidget(),
           ],
         ),
-        bottomNavigationBar: new TabBar(
+        bottomNavigationBar: TabBar(
           tabs: [
             Tab(icon: Icon(Icons.home),text: "视差",),
             Tab(icon: Icon(Icons.rss_feed),text: "Notification",),
